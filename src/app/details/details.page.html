@@ -1,0 +1,104 @@
+<!---<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ this.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>-->
+
+<ion-content ion-padding class="background" fullscreen="true">
+    <!--<ion-card [hidden]="shouldHide6">
+        
+        
+        <ion-skeleton-text  animated style="width: 60%"></ion-skeleton-text>
+        <ion-skeleton-text  animated style="width: 80%"></ion-skeleton-text>
+        <ion-skeleton-text  animated style="width: 100%; height: 167px"></ion-skeleton-text>
+        
+    </ion-card> -->
+      
+    <ion-card ><!--[hidden]="!shouldHide6" -->
+       
+        <ion-card-header class="card" >
+            
+            <div class="row">
+                <div class="col">
+                    <div class="text-center">
+                        <h1 style="text-align: center; color: #121691; font-weight: 800">{{ this.name }}</h1>
+                    </div>
+                </div>
+            </div>
+            <!--<ion-chip color="secondary" (click)="abbrobot()" class="alignme">
+              <ion-label  color="dark">More Details</ion-label>
+            </ion-chip>-->
+          </ion-card-header>
+          <ion-card-content >
+            <canvas #doughnutCanvasabb></canvas>
+          </ion-card-content>
+    </ion-card>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <ion-chip color="secondary" (click)="updatechart(1)">
+              <ion-label  color="dark">Last 24 hours</ion-label>
+    </ion-chip>
+
+    <ion-chip color="secondary" (click)="updatechart(7)" >
+        <ion-label  color="dark">Last 7 days</ion-label>
+    </ion-chip>
+
+    <ion-chip color="secondary" (click)="updatechart(15)" >
+        <ion-label  color="dark">Last 15 days</ion-label>
+    </ion-chip>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <ion-chip color="secondary" (click)="updatechart(30)" >
+      <ion-label  color="dark">Last 30 days</ion-label>
+    </ion-chip>
+      <ion-chip color="secondary" (click)="updatechart(60)" >
+          <ion-label  color="dark">Last 60 days</ion-label>
+        </ion-chip>
+        
+      <ion-chip color="secondary" (click)="plot()" >
+      <ion-label  color="dark">All</ion-label>
+    </ion-chip>
+    
+      
+    
+    
+      <!--<ion-card>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><span style="color: #121691">Machine name</span></strong> - {{this.name}}</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><span style="color: #121691">Machine Group</span></strong> - {{this.group}}</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><span style="color: #121691">Start ID</span></strong> - {{this.startid}}</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><span style="color: #121691">End ID</span></strong> - {{this.endid}}</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><span style="color: #121691">Duration</span></strong> - {{this.duration1}} to {{ this.duration2 }}</p>
+      </ion-card>-->
+
+      <ion-item>
+          <ion-label>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><span style="color: #121691">Machine name</span></strong> - {{this.name}}</p>
+              
+          </ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-label>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><span style="color: #121691">Machine Group</span></strong> - {{this.group}}</p>
+                
+              
+            </ion-label>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><span style="color: #121691">Start ID</span></strong> - {{this.startid}}</p>
+                  
+              </ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><span style="color: #121691">End ID</span></strong> - {{this.endid}}</p>
+                    
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                  <ion-label>
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><span style="color: #121691">Duration</span></strong> - <span style="font-size: 10px">{{this.duration1}}<span style="color: red"> to</span>  {{ this.duration2 }}</span></p>
+                    
+                  </ion-label>
+                </ion-item>
+</ion-content>

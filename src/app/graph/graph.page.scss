@@ -1,0 +1,37 @@
+.alignme{
+
+    float:right !important;
+  }
+
+
+  ion-loading.my-loading-class {
+    .loading-wrapper {
+      background: blueviolet;
+      box-shadow: none;
+    }
+  }
+
+  .custom-loader-class{
+    --background:rgb(255, 255, 255);
+  }
+.loader{
+  .loading-wrapper{
+    background-color:white;
+  }
+}
+
+ion-card{
+  --background:rgb(255, 255, 255);
+}
+
+ion-content.background{
+  --background: url(../../assets/imgs/home/graphbg.png) 0 0/100% 100% no-repeat;
+}
+
+.custom_header {
+  background-color: transparent !important;
+}
+ion-toolbar {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+  }

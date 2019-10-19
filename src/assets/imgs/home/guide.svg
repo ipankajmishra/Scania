@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 -0.00378214824013412 188 155.007568359375" width="100%" height="100%" ><rect id="svgEditorBackground" x="0" y="0" width="188" height="155" style="fill:none; stroke: none;"/><defs id="svgEditorDefs"><linearGradient gradientUnits="objectBoundingBox" id="lrgd2-e1-50-reflect" spreadMethod="reflect" x1="0%" x2="50%" y1="0%" y2="0%"><stop offset="0%" stop-color="lightblue"/><stop offset="100%" stop-color="#ef5b2b"/></linearGradient><linearGradient gradientUnits="objectBoundingBox" id="lrgd2-e1-repeat" spreadMethod="repeat" x1="20%" x2="40%" y1="0%" y2="0%"><stop offset="0%" stop-color="lightblue"/><stop offset="100%" stop-color="#ef5b2b"/></linearGradient><linearGradient gradientUnits="objectBoundingBox" id="lgrd2-peachpuff-sienna-h" spreadMethod="pad" x1="0%" x2="100%" y1="0%" y2="0%"><stop offset="0%" style="stop-color:peachpuff;  stop-opacity:1;"/><stop offset="100%" style="stop-color:sienna;  stop-opacity:1"/></linearGradient><linearGradient gradientTransform="skewX(-45)" gradientUnits="objectBoundingBox" id="lgrd2-c-repeat" spreadMethod="repeat" x1="0%" x2="5%" y1="0%" y2="0%"><stop offset="5%" stop-color="red" stop-opacity="0.8"/><stop offset="75%" stop-color="yellow" stop-opacity="1"/></linearGradient><linearGradient gradientUnits="objectBoundingBox" id="lrgd2-e1" spreadMethod="pad" x1="0%" x2="100%" y1="0%" y2="0%"><stop offset="0%" stop-color="lightblue"/><stop offset="100%" stop-color="#ef5b2b"/></linearGradient><linearGradient gradientUnits="objectBoundingBox" id="lgrd2-fire" spreadMethod="pad" x1="0%" x2="100%" y1="0%" y2="0%"><stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1"/><stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1"/></linearGradient><linearGradient gradientTransform="rotate(90)" gradientUnits="objectBoundingBox" id="lgrd2-d-reflect" spreadMethod="reflect" x1="0%" x2="5%" y1="0%" y2="5%"><stop offset="0%" stop-color="#e20709" stop-opacity="0.8"/><stop offset="5%" stop-color="#9ad346" stop-opacity="1"/></linearGradient><linearGradient id="lgrd3-fr-v" x1="0" x2="0" y1="0" y2="100%"><stop offset="0%" stop-color="blue"/><stop offset="50%" stop-color="black" stop-opacity="0"/><stop offset="100%" stop-color="red"/></linearGradient><linearGradient gradientUnits="objectBoundingBox" id="lgrd2-black-white" spreadMethod="pad" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" stop-color="black"/><stop offset="100%" stop-color="white"/></linearGradient><linearGradient gradientTransform="rotate(90)" gradientUnits="objectBoundingBox" id="lgrd3-a" spreadMethod="repeat" x1="10%" x2="20%" y1="20%" y2="20%"><stop offset="5%" stop-color="#babc91" stop-opacity="1"/><stop offset="50%" stop-color="#c8d591" stop-opacity="1"/><stop offset="90%" stop-color="#afd591" stop-opacity="1"/></linearGradient></defs>
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff7674;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 20px;
+        font-family: HelveticaNeue, Helvetica Neue;
+      }
+
+      .cls-4 {
+        filter: url(#Rectangle_11);
+      }
+    </style>
+    <filter id="Rectangle_11" x="0" y="0" width="188" height="155" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  
+<text style="fill:black;font-family:Arial;font-size:20px;" x="63.837013244628906" y="52.28438186645508" id="e1_texte"/><image x="76.6363341202958" y="49.41171646118164" width="30.0034" height="30.0034" id="e3_image" preserveAspectRatio="xMidYMid meet" xlink:href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDU4IDU4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1OCA1ODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggc3R5bGU9ImZpbGw6I0YwNzg1QTsiIGQ9Ik0zMSwyNi45NjJoMjYuOTI0QzU2Ljk0LDEyLjU0MSw0NS40MjEsMS4wMjIsMzEsMC4wMzhWMjYuOTYyeiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNGMEM0MTk7IiBkPSJNNTAuMzg2LDQ4LjYxNWM0LjM0My00LjcxLDcuMTUxLTEwLjg1OCw3LjYxNC0xNy42NTNIMzIuNzMzTDUwLjM4Niw0OC42MTV6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzU1NjA4MDsiIGQ9Ik0yNywyOC4xMzRWMC4wMzhDMTEuOTE4LDEuMDY3LDAsMTMuNjE5LDAsMjguOTYyQzAsMzYuMjUsMi42OTUsNDIuOTA1LDcuMTM0LDQ4TDI3LDI4LjEzNHoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojNzFDMjg1OyIgZD0iTTI4LjQxNCwzMi4zNzZMOS45NjIsNTAuODI4YzUuMDk1LDQuNDM5LDExLjc1LDcuMTM0LDE5LjAzOCw3LjEzNA0KCQljNi45OSwwLDEzLjM5Ni0yLjQ3OSwxOC40MDEtNi41OTlMMjguNDE0LDMyLjM3NnoiLz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" style="stroke:black;stroke-width:1px;fill:khaki;" transform="matrix(2.10526 0 0 2.10526 -97.805 -75.6624)"/><g class="cls-4" transform="matrix(1 0 0 1 0 0)">
+      
+    <rect id="Rectangle_11-2" data-name="Rectangle 11" class="cls-1" width="140" height="107" rx="6" transform="matrix(1 0 0 1 24 21)" style="fill:coral;fill-opacity:0.4;"/></g><text id="Lorem_Ipsum" data-name="Lorem Ipsum" class="cls-3" transform="matrix(1.09829 0 0 1 54.4006 115.789)" style="fill:purple; font-weight: normal;"><tspan x=""> REPORT </tspan></text></svg>

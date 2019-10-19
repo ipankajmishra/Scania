@@ -1,0 +1,63 @@
+<style>
+.jolly-toolbar{
+  --background: rgba(76,185,196,1);
+  --background: -moz-linear-gradient(45deg, rgba(76,185,196,1) 0%, rgba(61,211,174,1) 100%);
+  --background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(76,185,196,1)), color-stop(100%, rgba(61,211,174,1)));
+  --background: -webkit-linear-gradient(45deg, rgba(76,185,196,1) 0%, rgba(61,211,174,1) 100%);
+  --background: -o-linear-gradient(45deg, rgba(76,185,196,1) 0%, rgba(61,211,174,1) 100%);
+  --background: -ms-linear-gradient(45deg, rgba(76,185,196,1) 0%, rgba(61,211,174,1) 100%);
+  --background: linear-gradient(45deg, rgba(76,185,196,1) 0%, rgba(61,211,174,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4cb9c4', endColorstr='#3dd3ae', GradientType=1 );
+
+  --color:#ffffff;
+  
+}
+ion-content.background{
+  --background: url(../../assets/imgs/home/menubg.png) 0 0/100% 100% no-repeat;
+  
+}
+
+.transp {
+    background-color: transparent !important;
+    color: #fff;
+}
+
+ion-item{
+   --ion-background-color:transparent !important;
+   color: #fff;
+}
+</style>
+
+<ion-app>
+  <ion-split-pane>
+    <ion-menu>
+      <ion-header no-border>
+        <ion-toolbar>
+          <ion-title><img    width="30" height="30" src="../../assets/imgs/home/scania.svg" >Skania&nbsp;&nbsp;&nbsp;
+              <ion-chip color="secondary">
+                  <ion-label color="dark">Login</ion-label>
+                </ion-chip>
+                <ion-chip color="danger">
+                    <ion-label color="dark" outline="true">Sign Up</ion-label>
+                  </ion-chip>
+          </ion-title>
+          
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="background">
+          
+        <ion-list class="transp">
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+              <ion-item   [routerDirection]="'root'" [routerLink]="[p.url]">
+                  <ion-icon [name]="p.icon"></ion-icon>
+                  <ion-label>
+                      &nbsp;&nbsp;&nbsp;&nbsp;{{p.title}}
+                  </ion-label>
+                </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

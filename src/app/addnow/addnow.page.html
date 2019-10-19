@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title *ngIf="!displayQrCode()">Add New Machine</ion-title>
+    <ion-title *ngIf="displayQrCode()"><strong>Machine - </strong>{{ title }} </ion-title>
+  </ion-toolbar>
+  <!-- <ion-buttons end>
+      <button (click)="">
+          <ion-icon right name="add">
+    </button>
+    </ion-buttons> -->
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="displayQrCode()">
+      <h5><ion-icon name="arrow-dropright-circle"></ion-icon><strong>&nbsp;&nbsp;&nbsp;Machine Title :</strong> {{ title }}</h5>
+      <h5><ion-icon name="arrow-dropright-circle"></ion-icon><strong>&nbsp;&nbsp;&nbsp;Machine Description :</strong> {{ description }}</h5>
+      <h5><ion-icon name="arrow-dropright-circle"></ion-icon><strong>&nbsp;&nbsp;&nbsp;Last Calibration :</strong> {{ lastcalib }}</h5>
+      <h5><ion-icon name="arrow-dropright-circle"></ion-icon><strong>&nbsp;&nbsp;&nbsp;Upcoming Calibration :</strong> {{ upcalib }}</h5>
+  </div>
+  <!-- <ion-item>
+      
+      <ion-label position="floating">Last Calibration</ion-label>
+      <ion-input type="text" formControlName="last_calibration"></ion-input>
+      <ion-input [(ngModel)]="selectedDate" (click)="selectDate()" type="text"></ion-input>
+    </ion-item> -->
+  <form [formGroup]="infoForm" *ngIf="!displayQrCode()">
+    <ion-item>
+      <ion-label position="floating">Machine Title</ion-label>
+      <ion-input type="text" formControlName="info_title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Machine Description</ion-label>
+      <ion-input type="text" formControlName="info_description"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label >Last Calibration</ion-label>
+      <ion-datetime formControlName="last_calibration" display-format="YYYY-MM-DD" picker-format="DD MMMM YYYY"></ion-datetime>
+    </ion-item>
+    <!-- <ion-item>
+      
+        <ion-label position="floating">Last Calibration</ion-label>
+        <ion-input type="text" formControlName="last_calibration"></ion-input>
+        <ion-input [(ngModel)]="selectedDate" formControlName="last_calibration" (click)="selectDate()" type="text"></ion-input>
+      </ion-item> -->
+
+    <ion-item>
+      <!-- <ion-label position="floating">Upcoming Calibration</ion-label>
+      <ion-input type="text" formControlName="upcoming_calibration"></ion-input> -->
+      <ion-label >Upcoming Calibration</ion-label>
+      <ion-datetime formControlName="upcoming_calibration" display-format="YYYY-MM-DD" picker-format="DD MMMM YYYY"></ion-datetime>
+    </ion-item>
+    <ion-button shape="round" color="primary" expand="block" [disabled]="!infoForm.valid" (click)="saveInfo()">Save</ion-button>
+  </form>
+  <ion-card *ngIf="displayQrCode()">
+  <img  [src]="generated" />
+  <ion-button shape="round" color="primary" expand="block"  (click)="shareWhatsApp()">
+      <ion-icon class="share-icon" name="share"></ion-icon>
+    Share</ion-button>
+
+  <!-- <ion-item *ngIf="displayQrCode()">
+    <button (click)='shareWhatsApp()'>
+      <ion-icon name="share"></ion-icon>
+
+    </button>
+  </ion-item> -->
+  
+
+</ion-card>
+</ion-content>
+

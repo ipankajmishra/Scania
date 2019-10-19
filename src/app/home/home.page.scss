@@ -1,0 +1,102 @@
+ion-content.background{
+  --background: url(../../assets/imgs/home/homebg.png) 0 0/100% 100% no-repeat;
+}
+
+
+
+.custom_header {
+  background-color: transparent !important;
+}
+ion-toolbar {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+  }
+page-home {
+  ion-card, .card-ios, .card-md {
+     border: none !important;
+     box-shadow: none !important;
+     border: none !important;
+     border-style: none !important;
+     position: relative;
+     text-align: center;
+     // border-top: 3px solid colorofyourchosing
+   }
+   .card{
+     border: none !important;
+     box-shadow: none !important;
+     border: none !important;
+     border-style: none !important;
+     background-color: #ffffff !important;
+   }    }
+
+   .specialperm {
+    background-color: #124191; // black
+    box-shadow: none;
+    margin-top: 500px;
+    //padding-top: 500px;
+  }
+
+  .graphrow{
+    padding-top: 270px;
+    position: relative;
+  }
+
+  .specialwhite{
+    
+     background-color: #ffffff !important;
+  }
+
+.welcome-card ion-img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+
+
+.mgrid{
+  background-color: #ec0e0e;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 0%;
+  //background-position-y: -50%;
+   //background-image: url('../../assets/img/8122.jpg');
+   //background-repeat: no-repeat;
+}
+.jolly-toolbar{
+  --background: rgba(76,185,196,1);
+  --background: -moz-linear-gradient(45deg, rgba(76,185,196,1) 0%, rgba(61,211,174,1) 100%);
+  --background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(76,185,196,1)), color-stop(100%, rgba(61,211,174,1)));
+  --background: -webkit-linear-gradient(45deg, rgba(76,185,196,1) 0%, rgba(61,211,174,1) 100%);
+  --background: -o-linear-gradient(45deg, rgba(76,185,196,1) 0%, rgba(61,211,174,1) 100%);
+  --background: -ms-linear-gradient(45deg, rgba(76,185,196,1) 0%, rgba(61,211,174,1) 100%);
+  --background: linear-gradient(45deg, rgba(76,185,196,1) 0%, rgba(61,211,174,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4cb9c4', endColorstr='#3dd3ae', GradientType=1 );
+
+  --color:#ffffff;
+}
+
+.imgg{
+  padding-top: -150px;
+  margin-top: 0;
+  position: absolute;
+
+}
+
+.svgrow{
+  //padding-top: 500px;
+  
+}
+
+.bar-header {
+  border: 0px !important;
+  border-bottom-color: transparent !important;
+  background-image: none !important;
+  border-bottom: none !important;
+}
+
+.trend{
+  height: 200px;
+	background: #ad5389;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}

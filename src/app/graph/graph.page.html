@@ -1,0 +1,210 @@
+<ion-header no-border>
+    <ion-toolbar class="jolly-toolbar">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        <img    width="30" height="30" src="../../assets/imgs/home/scania.svg" > OEE
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <!-- <ion-header no-border>
+      <ion-toolbar class="">
+        <ion-buttons slot="start" >
+          <ion-menu-button color="light" ></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+          <img    width="30" height="30" src="../../assets/imgs/home/scania.svg" > Skania™️
+        </ion-title>
+      </ion-toolbar>
+    </ion-header> -->
+  
+
+<ion-content ion-padding  fullscreen="true">
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content
+            pullingIcon="arrow-dropdown"
+            pullingText="Pull to refresh"
+            refreshingSpinner="circles"
+            refreshingText="Refreshing...">
+        </ion-refresher-content>
+      </ion-refresher>
+  
+    <ion-card [hidden]="shouldHide6">
+        
+        
+        <ion-skeleton-text  animated style="width: 60%"></ion-skeleton-text>
+        <ion-skeleton-text  animated style="width: 80%"></ion-skeleton-text>
+        <ion-skeleton-text  animated style="width: 100%; height: 167px"></ion-skeleton-text>
+        
+    </ion-card> 
+      
+    <ion-card [hidden]="!shouldHide6" >
+       
+        <ion-card-header class="card" >
+            ABB Robot  
+            <ion-chip color="secondary" (click)="abbrobot()" class="alignme">
+              <ion-label  color="dark">More Details</ion-label>
+            </ion-chip>
+          </ion-card-header>
+          <ion-card-content >
+            <canvas #doughnutCanvasabb></canvas>
+          </ion-card-content>
+    </ion-card>
+  
+
+    <ion-card [hidden]="shouldHide5">
+      <ion-skeleton-text  animated style="width: 60%"></ion-skeleton-text>
+      <ion-skeleton-text  animated style="width: 80%"></ion-skeleton-text>
+      <ion-skeleton-text  animated style="width: 100%; height: 167px"></ion-skeleton-text>
+        
+    </ion-card>   
+    <ion-card [hidden]="!shouldHide5">
+        
+        <ion-card-header class="card" style="height:100%">
+            DELTA-1
+            <ion-chip color="secondary" (click)="donerobot()" class="alignme">
+              <ion-label  color="dark">More Details</ion-label>
+            </ion-chip>
+          </ion-card-header>
+          <ion-card-content >
+            <canvas #doughnutCanvasdone></canvas>
+          </ion-card-content>
+    </ion-card>
+
+
+    <ion-card [hidden]="shouldHide7">
+      <ion-skeleton-text  animated style="width: 60%"></ion-skeleton-text>
+      <ion-skeleton-text  animated style="width: 80%"></ion-skeleton-text>
+      <ion-skeleton-text  animated style="width: 100%; height: 167px"></ion-skeleton-text>
+        
+    </ion-card>   
+    <ion-card [hidden]="!shouldHide7">
+        
+        <ion-card-header class="card" style="height:100%">
+            DELTA-2
+            <ion-chip color="secondary" (click)="dtworobot()" class="alignme">
+              <ion-label  color="dark">More Details</ion-label>
+            </ion-chip>
+          </ion-card-header>
+          <ion-card-content >
+            <canvas #doughnutCanvasdtwo></canvas>
+          </ion-card-content>
+    </ion-card>
+      
+
+    <!--<ion-card [hidden]="shouldHide3">
+      <ion-skeleton-text  animated style="width: 60%"></ion-skeleton-text>
+      <ion-skeleton-text  animated style="width: 80%"></ion-skeleton-text>
+      <ion-skeleton-text  animated style="width: 100%; height: 167px"></ion-skeleton-text>
+        
+    </ion-card>   -->
+    <ion-card [hidden]="!shouldHide3">
+        
+        <ion-card-header class="card" style="height:100%">
+            EPSON
+            <ion-chip color="secondary" (click)="epsonrobot()" class="alignme">
+              <ion-label  color="dark">More Details</ion-label>
+            </ion-chip>
+          </ion-card-header>
+          <ion-card-content >
+            <canvas #doughnutCanvas3></canvas>
+          </ion-card-content>
+    </ion-card>
+
+
+    <!--<ion-card [hidden]="shouldHide1">
+      <ion-skeleton-text  animated style="width: 60%"></ion-skeleton-text>
+      <ion-skeleton-text  animated style="width: 80%"></ion-skeleton-text>
+      <ion-skeleton-text  animated style="width: 100%; height: 167px"></ion-skeleton-text>
+        
+    </ion-card>   -->
+    <ion-card [hidden]="!shouldHide1">
+        
+        <ion-card-header class="card" style="height:100%">
+            MCI Robot-1 
+            <ion-chip color="secondary" (click)="mcirobot()" class="alignme">
+              <ion-label  color="dark">More Details</ion-label>
+            </ion-chip>
+          </ion-card-header>
+          <ion-card-content >
+            <canvas #doughnutCanvass></canvas>
+          </ion-card-content>
+    </ion-card>
+          
+        <!--<ion-card [hidden]="shouldHide">
+          <ion-skeleton-text  animated style="width: 60%"></ion-skeleton-text>
+          <ion-skeleton-text  animated style="width: 80%"></ion-skeleton-text>
+          <ion-skeleton-text  animated style="width: 100%; height: 167px"></ion-skeleton-text>
+            
+        </ion-card>   -->
+        <ion-card [hidden]="!shouldHide">
+            
+            <ion-card-header class="card" style="height:100%">
+                Screw Robot
+                <ion-chip color="secondary" (click)="screwrobot()" class="alignme">
+                  <ion-label  color="dark">More Details</ion-label>
+                </ion-chip>
+              </ion-card-header>
+              <ion-card-content >
+                <canvas #doughnutCanvas></canvas>
+              </ion-card-content>
+        </ion-card>  
+        
+        
+
+        
+
+       <!-- <ion-card [hidden]="shouldHide4">
+          <ion-skeleton-text  animated style="width: 60%"></ion-skeleton-text>
+          <ion-skeleton-text  animated style="width: 80%"></ion-skeleton-text>
+          <ion-skeleton-text  animated style="width: 100%; height: 167px"></ion-skeleton-text>
+            
+        </ion-card>   -->
+        <ion-card [hidden]="!shouldHide4">
+            
+            <ion-card-header class="card" style="height:100%">
+                UR10 Robot
+                <ion-chip color="secondary" (click)="urirobot()" class="alignme">
+                  <ion-label  color="dark">More Details</ion-label>
+                </ion-chip>
+              </ion-card-header>
+              <ion-card-content >
+                <canvas #doughnutCanvasss></canvas>
+              </ion-card-content>
+        </ion-card>
+
+        
+
+        
+
+        
+
+        <!--<ion-card [hidden]="shouldHide">
+            <ion-skeleton-text  animated style="width: 300px; height: 150px"></ion-skeleton-text>
+            <ion-skeleton-text  animated style="width: 80%"></ion-skeleton-text>
+            <ion-skeleton-text  animated style="width: 60%"></ion-skeleton-text>
+            
+        </ion-card>   
+        <ion-card [hidden]="!shouldHide">
+            
+            <ion-card-header class="card" style="height:100%">
+                DELTA-2
+              </ion-card-header>
+              <ion-card-content >
+                <canvas #doughnutCanvas></canvas>
+              </ion-card-content>
+        </ion-card>-->
+      
+    
+    
+ 
+
+  
+
+
+      
+
+</ion-content>
